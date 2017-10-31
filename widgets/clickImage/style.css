@@ -1,0 +1,19 @@
+.click-image {
+    height: 100px;
+    width: 100px;
+}
+
+.click-image .click-image-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.click-image .click-image-img:hover {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    border: 2px solid lightblue;
+}

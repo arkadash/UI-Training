@@ -24,4 +24,8 @@ $(function() {
             }
         });
     };
+
+    // loadAllVideoIds(function(data){
+    //     alert(data);
+    // })
 });

@@ -21,15 +21,24 @@
 </style>
 <script>
     $(function() {
-        $('.test-element').clickImage({
-
+        const clickImageEl = $('.test-element').clickImage({
+            title: "This is my title",
+            onClick: function(){
+                alert("You clicked on my image!");
+            }
         });
+        $(".image-button-click" ).button();
+        $(".image-button-click" ).click( function( event ) {
+            clickImageEl.clickImage('clickMethod');
+        } );
     });
 </script>
 <body>
 <div class="container">
     <div class="test-element"></div>
+    <button class="image-button-click">Click Me!</button>
 </div>
+
 
 </body>
 </html>
